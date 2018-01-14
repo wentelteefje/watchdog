@@ -1,0 +1,3 @@
+# watchdog cron jobs
+@reboot sudo -u pi -i /home/pi/watchdog/cron_prepare.sh
+@reboot sudo -u pi -i /home/pi/watchdog/watchdog.sh
