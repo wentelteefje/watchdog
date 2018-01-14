@@ -5,9 +5,10 @@ do
   then
     date | tr '\n' ' ' >> watchdog.log
     echo "Keine Response vom Rig. Leite Neustart ein." >> watchdog.log
-    python pwr_off.py;
+    python pwr_off.py
   else
-    # Alles OK.
+    echo "Alles OK."
   fi
+
   sleep 120;
 done
