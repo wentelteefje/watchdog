@@ -1,7 +1,7 @@
 #!/bin/bash
 while true
 do
-  if ! ping -c 1 -w 30 192.168.1.140 >/dev/null
+  if ! ping -c 1 -w 30 192.168.178.20 >/dev/null
   then
     date | tr '\n' ' ' >> watchdog.log
     echo "Keine Response vom Rig. Leite Neustart ein." >> watchdog.log
